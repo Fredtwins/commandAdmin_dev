@@ -1,0 +1,159 @@
+.list-warpper {
+  width: 100%;
+  font-size: 14px;
+}
+.list-warpper .list-header {
+  width: 660px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.list-warpper .list-header .list-header-rule {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 100;
+  padding-top: 5px;
+}
+.list-warpper .list-detail {
+  width: 660px;
+  border: 1px solid black;
+  background: black;
+  margin: 0 auto;
+}
+.list-warpper .list-detail .list-task-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.list-warpper .list-detail .list-task-info .list-task-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.list-warpper .list-detail .list-task-info .list-task-box .title {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 29px;
+  border-right: 1px solid black;
+}
+.list-warpper .list-detail .list-task-info .list-task-box .content {
+  padding: 0 5px;
+  flex: 1;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.list-warpper .list-detail .list-task-info .list-task-box-right .title {
+  border-left: 1px solid black;
+}
+.list-warpper .list-detail .list-task-question {
+  padding-left: 5px;
+  min-height: 60px;
+  border-bottom: 1px solid black;
+}
+.list-warpper .list-detail .list-task-question .content {
+  padding-left: 15px;
+}
+.list-warpper .list-detail .list-task-checkTitle {
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+.list-warpper .list-detail .list-task-checks {
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.list-warpper .list-detail .list-task-checks .title {
+	margin-bottom: 5px;
+}
+.list-warpper .list-detail .list-task-checks .danger-list-icon.icon-gou {
+  position: absolute;
+  left: -1px;
+  top: -2px;
+}
+.list-warpper .list-detail .list-task-checks .danger-list-icon.icon-chaguanbi {
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  font-size: 26px;
+}
+.list-warpper .list-detail .list-task-checks .danger-list-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.list-warpper .list-detail .list-task-remark {
+  text-indent: 2em;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.list-warpper .list-detail .list-task-remark .remark-date {
+  text-decoration: underline;
+}
+.list-warpper .list-detail .list-task-autograph {
+  display: flex;
+}
+.list-warpper .list-detail .list-task-autograph .read-company,
+.list-warpper .list-detail .list-task-autograph .read-company-info,
+.list-warpper .list-detail .list-task-autograph .check-company,
+.list-warpper .list-detail .list-task-autograph .check-company-info {
+  border-right: 1px solid black;
+}
+.list-warpper .list-detail .list-task-autograph .read-company,
+.list-warpper .list-detail .list-task-autograph .check-company {
+  flex: 1;
+  text-align: center;
+}
+.list-warpper .list-detail .list-task-autograph .read-company .title,
+.list-warpper .list-detail .list-task-autograph .check-company .title {
+  padding: 4px 0;
+  border-bottom: 1px solid black;
+}
+.list-warpper .list-detail .list-task-autograph .read-company .content,
+.list-warpper .list-detail .list-task-autograph .check-company .content {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.list-warpper .list-detail .list-task-autograph .read-company-info,
+.list-warpper .list-detail .list-task-autograph .check-company-info {
+  width: 130px;
+  padding: 3px 8px;
+}
+.list-warpper .list-detail .list-task-autograph .read-company-info .content,
+.list-warpper .list-detail .list-task-autograph .check-company-info .content {
+  text-align: right;
+  margin-top: 10px;
+}
+.list-warpper .list-detail .list-task-autograph .read-company-info .content > span,
+.list-warpper .list-detail .list-task-autograph .check-company-info .content > span {
+  margin: 0 20px;
+}
+.list-warpper .list-detail .list-task-autograph .check-company-info {
+  border: none;
+}
+.list-warpper .list-task-explain {
+	width: 660px;
+  margin: 0 auto;
+  padding-top: 5px;
+  font-size: 12px;
+  display: flex;
+}
+.list-warpper .list-task-explain .title {
+  width: 40px;
+}
+.list-warpper .list-task-explain .content {
+  flex: 1;
+}

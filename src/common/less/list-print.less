@@ -1,0 +1,153 @@
+.list-warpper {
+    width: 100%;
+    font-size: 12px;
+    .list-header {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        .list-header-rule {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 100;
+            padding-top: 5px;
+        }
+    }
+    .list-detail {
+        width: 660px;
+        border: 1px solid black;
+        .list-task-info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .list-task-box {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid black;
+                .title {
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    line-height: 29px;
+                    border-right: 1px solid black;
+                }
+                .content {
+                    padding: 0 5px;
+                    flex: 1;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 12px;
+                }
+            }
+            .list-task-box-right {
+                .title {
+                    border-left: 1px solid black;
+                }
+            }
+        }
+        .list-task-question{
+            padding-left: 5px;
+            min-height: 40px;
+            border-bottom: 1px solid black;
+            .content {
+                padding-left: 15px;
+            }
+        }
+        .list-task-checkTitle {
+            text-align: center;
+            font-weight: 700;
+            border-bottom: 1px solid black;
+        }
+        .list-task-checks {
+            font-size: 12px;
+            border-bottom: 1px solid black;
+            padding: 3px 5px;
+            .title {
+                margin-bottom: 2px;
+            }
+            .danger-list-icon.icon-gou {
+                position: absolute;
+                left: -2px;
+                top: -8px;
+            }
+            .danger-list-icon.icon-chaguanbi {
+                position: absolute;
+                left: -9px;
+                top: -15px;
+                font-size: 26px;
+            }
+            .danger-list-box {
+                width: 10px;
+                height: 10px;
+                border-radius: 2px;
+                border: 1px solid black;
+                display:inline-block;
+                position: relative;
+            }
+            .list-mission-img {
+                width: 100%;
+                div {
+                    width: 206px;
+                    margin: 5px;
+                }
+            }
+        }
+        .list-task-remark {
+            text-indent: 2em;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px;
+            border-bottom: 1px solid black;
+            .remark-date {
+                text-decoration: underline;
+            }
+        }
+        .list-task-autograph {
+            display: flex;
+            .read-company, .read-company-info, .check-company, .check-company-info {
+                border-right: 1px solid black;
+            }
+            .read-company, .check-company {
+                flex: 1;
+                text-align: center;
+                .title {
+                    padding: 4px 0;
+                    border-bottom: 1px solid black;
+                }
+                .content {
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                }
+            }
+            .read-company-info, .check-company-info{
+                width: 130px;
+                padding: 3px 8px;
+                .content {
+                    text-align: right;
+                    margin-top: 10px;
+                    >span {
+                        margin: 0 20px;
+                    }
+                }
+            }
+            .check-company-info {
+                border: none;
+            }
+        }
+    }
+    .list-task-explain {
+        padding-top: 5px;
+        font-size: 12px;
+        display: flex;
+        .title {
+            width: 40px;
+        }
+        .content {
+            flex: 1;
+        }
+    }
+}

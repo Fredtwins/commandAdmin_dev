@@ -1,0 +1,137 @@
+/* 可移动信息框
+* @ 劳兆城 
+* @ 2017-08-30*/
+
+<template>
+	<transition name="animate-box">
+		<div class="interact-model" ref="interact-model" v-show="show">
+			<div class="interact-model-header" ref="interact-model-header">
+				<div class="title">{{title}}</div>
+				<div class="close" @click="hideModel">&times;</div>
+			</div>
+			<div class="interact-model-content">
+				<slot></slot>				
+			</div>
+		</div>
+	</transition>
+</template>
+
+<script>
+	export default {
+		props: {
+			title: {
+				type: String,
+				default: ''
+			},
+			isCancel: {
+				type: Boolean,
+				default: false
+			},
+			isInteract: {
+				type: Boolean,
+				default: true
+			}
+		},
+		mounted() {
+			setTimeout(() => {
+				if(!this.isInteract) {
+					return
+				}
+				this.initInteract();
+			}, 20)
+		},
+		data() {
+			return {
+				show: false
+			}
+		},
+		methods: {
+			showModel() {
+				this.show = true;
+			},
+			hideModel() {
+				this.show = false;
+				if (!this.isCancel) {
+					return
+				}
+				this.$emit('cancel')
+			},
+			initInteract() {
+				let dropOption = {
+					restrict: {
+						restriction: 'parent',
+						elementRect: {
+							top: 0,
+							left: 0,
+							bottom: 1,
+							right: 1
+						}
+					},
+					onmove: function(event) {
+						var target = event.target,
+							x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+							y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+						target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
+						target.setAttribute('data-x', x)
+						target.setAttribute('data-y', y)
+					}
+				};
+				interact(this.$refs['interact-model'])
+					.draggable(dropOption)
+			}
+		}
+	}
+</script>
+
+<style scoped lang="less">
+
+	@import url("~common/less/color.less");
+	
+	.interact-model {
+		position: absolute;
+		z-index: 100;
+		background-color: #F7F6F6;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+		user-select: none;
+		.interact-model-header {
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			background-color: @color;
+			color: white;
+			font-size: 14px;
+			border-radius: 5px 5px 0 0;
+			position: relative;
+			.title {
+				
+			}
+			.close {
+				position: absolute;
+				font-size: 21px;
+				right: 16px;
+				top: -1px;
+				cursor: pointer;
+			}
+			.close:hover {
+				color: #999;
+			}
+		}
+		.interact-model-content {
+			width: 100%;
+			height: e('calc(100% - 40px)');
+			position: relative;
+		}
+	}
+	.animate-box-enter-active,
+	.animate-box-leave-active {
+		transition: all .4s;
+	}
+	
+	.animate-box-enter,
+	.animate-box-leave-to {
+		transform: scale(.8);
+		opacity: 0;
+	}
+</style>

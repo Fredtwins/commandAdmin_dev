@@ -1,0 +1,95 @@
+.edit-warpper {
+    width: 100%;
+    .edit-header {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .edit-detail {
+        width: 600px;
+        margin: auto;
+        border: 1px solid black;
+        .edit-task-name {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        .edit-task-company {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+            .make-company {
+                flex: 1;
+                display: flex;
+                align-items: center;
+            }
+            .read-company {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                > .title {
+                    border-left: 1px solid black;
+                }
+            }
+        }
+        .title {
+            text-align: center;
+            font-size: 14px;
+            padding: 0 20px;
+            line-height: 39px;
+            border-right: 1px solid black;
+        }
+        .content {
+            padding: 0 10px;
+            flex: 1;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .edit-task-question {
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+            .question-title {
+                padding: 0 20px;
+            }
+            .question-content {
+                padding: 10px 20px 5px;
+                .check-warpper {
+                    font-size: 12px;
+                    .check-box {
+                        padding-left: 12px;
+                        .check-title {}
+                        .check-content {
+                            padding-left: 12px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .edit-task-result {
+            padding: 10px;
+            .result-content {
+                text-indent: 2em;
+                line-height: 2em;
+                .result-day {
+                    text-decoration: underline;
+                }
+            }
+            .result-autograph {
+                margin-top: 50px;
+                margin-bottom: 30px;
+                .autograph-name {
+                    margin-bottom: 10px;
+                }
+            }
+            .result-date {
+                text-align: right;
+                margin-bottom: 30px;
+                padding-right: 20px;
+            }
+        }
+    }
+}

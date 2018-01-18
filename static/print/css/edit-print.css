@@ -1,0 +1,94 @@
+.edit-warpper {
+  width: 100%;
+}
+.edit-warpper .edit-header {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.edit-warpper .edit-detail {
+  width: 600px;
+  margin: auto;
+  border: 1px solid black;
+}
+.edit-warpper .edit-detail .edit-task-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.edit-warpper .edit-detail .edit-task-company {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.edit-warpper .edit-detail .edit-task-company .make-company {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.edit-warpper .edit-detail .edit-task-company .read-company {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.edit-warpper .edit-detail .edit-task-company .read-company > .title {
+  border-left: 1px solid black;
+}
+.edit-warpper .edit-detail .title {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 20px;
+  line-height: 39px;
+  border-right: 1px solid black;
+}
+.edit-warpper .edit-detail .content {
+  padding: 0 10px;
+  flex: 1;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.edit-warpper .edit-detail .edit-task-question {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+.edit-warpper .edit-detail .edit-task-question .question-title {
+  padding: 0 20px;
+}
+.edit-warpper .edit-detail .edit-task-question .question-content {
+  padding: 10px 20px 5px;
+}
+.edit-warpper .edit-detail .edit-task-question .question-content .check-warpper {
+  font-size: 12px;
+}
+.edit-warpper .edit-detail .edit-task-question .question-content .check-warpper .check-box {
+  padding-left: 12px;
+}
+.edit-warpper .edit-detail .edit-task-question .question-content .check-warpper .check-box .check-content {
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+.edit-warpper .edit-detail .edit-task-result {
+  padding: 10px;
+}
+.edit-warpper .edit-detail .edit-task-result .result-content {
+  text-indent: 2em;
+  line-height: 2em;
+}
+.edit-warpper .edit-detail .edit-task-result .result-content .result-day {
+  text-decoration: underline;
+}
+.edit-warpper .edit-detail .edit-task-result .result-autograph {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.edit-warpper .edit-detail .edit-task-result .result-autograph .autograph-name {
+  margin-bottom: 10px;
+}
+.edit-warpper .edit-detail .edit-task-result .result-date {
+  text-align: right;
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
